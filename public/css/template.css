@@ -1,0 +1,49 @@
+
+body {
+    padding: 80px 10px;
+}
+
+#top{
+    background-color: #343a40!important;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding-left: 20px;
+}
+
+#sub-title {
+    font-style: italic;
+}
+
+#introtext {
+    margin-top: 30px;
+}
+
+.title-comment {
+    border-bottom: 1px solid #ddd; 
+    margin: 35px 0;
+}
+
+#comments {
+    margin-top: 40px;
+}
+
+#comment_box {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#date_comment {
+    font-size: 10px;
+    color: #888;
+}
+
+#body_comment {
+    padding: 10px;
+    font-style: italic;
+}
