@@ -21,23 +21,28 @@
             <div class="row">
                 <div class="col-8" style="margin-top: 30px;">
                     <?php
-                    //print all post
-                    foreach($Posts as $post)
-                    {
-                        echo "<article>";
-                        echo "<a href=\"index.php/post/".$post['id']."\">" 
-                                ."<h2>".$post['title']."</h2>"
-                            ."</a>";
-                        echo "<p>".$post['introtext']."</p>";
-                        echo "<div style=\"text-align:right;\">"
-                                ."<a href=\"index.php/post/".$post['id']."\">Read more</a>"
-                                ."</div>";
-                        echo "</article>";
-                        echo "<hr style=\"height:2px; width:50%; border-width:0; color:red; background-color:red\">";
-                    }                    ?>
+                    if(count($Posts)>0) {
+                        //print all post
+                        foreach($Posts as $post)
+                        {
+                            echo "<article>";
+                            echo "<a href=\"index.php/post/".$post['id']."\">" 
+                                    ."<h2>".$post['title']."</h2>"
+                                ."</a>";
+                            echo "<p>".$post['introtext']."</p>";
+                            echo "<div style=\"text-align:right;\">"
+                                    ."<a href=\"index.php/post/".$post['id']."\">Read more</a>"
+                                    ."</div>";
+                            echo "</article>";
+                            echo "<hr style=\"height:2px; width:50%; border-width:0; color:red; background-color:red\">";
+                        }  
+                    }
+                    else
+                        echo "<h2><em>There are no Post</em></h2>";   
+                    ?>
                 </div>
                 <div class="col">
-                    <a href="./index.php/new-post">Create a new post</a>
+                    <a href="./index.php/new-post" style="font-size: 26px;">Create a new post</a>
                 </div>
             </div>
         </div>     
